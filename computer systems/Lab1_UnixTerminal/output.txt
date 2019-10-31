@@ -1,0 +1,20 @@
+# Simply copy and paste the output from your terminal here!
+
+-bash-4.2$ rmdir blank
+-bash-4.2$ ls
+ExternalResources  images  main.c  output.txt  README.md
+-bash-4.2$ cd images/
+-bash-4.2$ man mv
+-bash-4.2$ 
+-bash-4.2$ ps
+  PID TTY          TIME CMD
+19322 pts/3    00:00:00 bash
+20875 pts/3    00:00:00 ps
+-bash-4.2$ echo test
+test
+-bash-4.2$ whoami
+rdavis
+
+
+
+

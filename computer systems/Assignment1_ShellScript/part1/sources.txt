@@ -1,0 +1,11 @@
+# sources used for project completion
+
+https://courses.cs.washington.edu/courses/cse391/17sp/bash.html
+
+http://www.rasmussenreports.com/public_content/current_events/politics/prez_track_sep10
+
+https://stackoverflow.com/questions/20485749/how-to-set-a-variable-to-current-date-and-date-1-in-linux
+
+https://www.computerhope.com/unix/ucut.htm
+
+https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/

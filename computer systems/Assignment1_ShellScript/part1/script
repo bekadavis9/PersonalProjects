@@ -1,0 +1,81 @@
+#!/bin/bash
+#
+# a script which examine's the president's poll numbers
+# it will send the user an email according to the analysis
+
+# end of url depends on what the date is
+# find the date and add to the url
+
+# get the date
+  current_date=$(date +%Y-%m-%d);
+
+  day=$(date -d "$d" '+%d');
+  month=$(date -d "$d" '+%m');
+  year2k=$(date -d "$d" '+%Y');
+  ((year = year2k - 2000));
+
+  dash="-";  #to be used for full date parse later
+
+# change the month into text as used in "data.txt"
+  if [ $month -eq 01 ]; then
+    new_month="jan";
+  elif [ $month -eq 02 ]; then
+    new_month="feb";
+  elif [ $month -eq 03 ]; then
+    new_month="mar";
+  elif [ $month -eq 04 ]; then
+    new_month="apr";
+  elif [ $month -eq 05 ]; then
+    new_month="may";
+  elif [ $month -eq 06 ]; then
+    new_month="jun";
+  elif [ $month -eq 07 ]; then
+    new_month="jul";
+  elif [ $month -eq 08 ]; then
+    new_month="aug";
+  elif [ $month -eq 09 ]; then
+    new_month="sep";
+  elif [ $month -eq 10 ]; then
+    new_month="oct";
+  elif [ $month -eq 11 ]; then
+    new_month="nov";
+  elif [ $month -eq 12 ]; then
+    new_month="dec";
+  else
+    new_month="null";
+  fi
+  upper_month="${new_month^}";  #have to use uppercase (Sep) for grep, ignorecase not working
+
+# change date into format from "data.txt"
+  new_date="$day$dash$upper_month$dash$year";  #"10-Sep-19"
+
+  url_base="http://www.rasmussenreports.com/public_content/current_events/politics/prez_track_";
+  url_date="$new_month$day";
+  url="$url_base$url_date";
+
+# download data from website and save in working directory
+# saves to text file called "data.txt" for later analysis
+  curl $url -o "data.txt";
+
+# when I parse for the date, I want the 1st result - the number after the date
+# parse for the date in the data  
+  grep -w -o -P "$new_date.{4,5}" data.txt >> dates.txt;  #not currently working
+
+# get the poll number from the date data
+  cut -c 13-14 dates.txt >> dates2.txt;
+  readarray poll < dates2.txt; 
+
+# president's current poll number for the day is stored in $poll
+
+# send self an email for the day with the poll number
+  msg1="Time to move to Canada! ";
+  msg2="You are currently safe in America! ";
+
+  body="The president's approval rate today is 0.$poll ";
+
+  if [ $poll -gt 49 ]; then   
+    mail -s "Trump's Numbers" davis.r@husky.neu.edu <<< "$msg1$body";
+  else
+    mail -s "Trump's Numbers" davis.r@husky.neu.edu <<< "$msg2$body";
+  fi
+
