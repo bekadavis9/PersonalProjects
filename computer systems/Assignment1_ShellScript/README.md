@@ -4,7 +4,9 @@ Let's get used to the terminal and the shell by writing a 1-2 page tutorial usin
 
 ### How to run your script
 
-You will run your script by typing `sh myScript.sh` on the command line as an executable shell script(sh is the GNU Bourne-Again SHell (type [man sh](https://linux.die.net/man/1/sh) on the terminal for more information).  You can look at example 'sh' scripts for inspiration on what you can achieve on the web, but you must cite them appropriately in your [README.md](./../README.md). 
+Run the script by typing `sh script.sh` on the command line as an executable shell script(sh is the GNU Bourne-Again SHell (type [man sh](https://linux.die.net/man/1/sh) on the terminal for more information).  You can look at example 'sh' scripts for inspiration on what you can achieve on the web, but you must cite them appropriately in your [README.md](./../README.md).
+
+The script automatically sends an email to my Northeastern email, which is hard-coded in `script` in the last few lines. This can be changed to send to any email. 
 
 ### How to write your tutorial
 
