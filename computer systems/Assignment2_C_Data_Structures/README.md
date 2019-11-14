@@ -11,14 +11,14 @@ The queue is a 'first-in, first-out' (FIFO) data structure. Thus queues have a s
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Circular_Buffer_Animation.gif/400px-Circular_Buffer_Animation.gif)
 
 
+* Compile: `gcc queue_test.c -o queue_test`
+* Run: `./queue_test`
+
+
 # Building Data Structures - Stack
 <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lifo_stack.png/350px-Lifo_stack.png" alt="Stack picture">
 
-A 'stack' data structure is analogous to how you might wash dishes at a restaurant. A dirty dish is placed near the sink, and you pick it up to begin washing it. As customers bring in more dirty dishes, they are stacked on top of each other. With this ordering, the newest dirty-dish is placed on the top. This makes a stack a  'last-in first-out' (LIFO) data structure. Thus stacks have a strict policy about how information is stored and accessed.
-
-For this assignment, you are going to implement a specific implementation of a stack using a linked list in the [mystack.h](./mystack.h) file.
-
-## Part 1 - Stack implementation using a linked list.
+## Stack implementation using a linked list.
 
 Our stack has two fundamental operations that it can perform:
 
