@@ -1,8 +1,6 @@
-# Automate (some of) your life
+# Automating something in your life
 
-Getting familiar with the terminal is a fundamental skill to have, as you may not always have a neat graphical user interface ([GUI](https://en.wikipedia.org/wiki/Graphical_user_interface)) environment available to you. Many of you have various levels of experience using the terminal, so you will have some flexibility to be creative and push your skills.
-
-For this assignment, you will be warming up by writing a 1-2 page tutorial using unix commands and the bash scripting language. Your tutorial will be embedded in a shell script comments, explaining how to do something on the terminal that is non-trivial and automates some task that is particularly useful to you. 
+Let's get used to the terminal and the shell by writing a 1-2 page tutorial using unix commands and the bash scripting language. The tutorial will be embedded in a shell script comments, explaining how to do something on the terminal that is non-trivial and automates some task that is particularly useful to you. 
 
 ### How to run your script
 
@@ -23,12 +21,9 @@ Examples of a non-trivial scripts:
 	* Some handy commands may include (but are not limited to): proc, lscpu
 4. You can use your imagination to create other tutorials as well.
 
-# Part 1 - myScript.sh
 
-<img width="400px" src="https://cdn-images-1.medium.com/max/1600/1*MaSfT-bQOxfWnKjFPxMg6g.gif">
-
-## Very Brief Example Tutorial (Template)
-(Note this example is fairly trivial, probably worth a C-. You would want to add to this script, but notice how the inline comments explain what is going on in a tutorial fashion--that is the goal of your script you are writing.)
+## Very Brief Example Tutorial
+A very trivial example to go off of in your script. 
 
 ```
 # Problem Statement: "Often I have to search for different files and directories within my computer system. 
