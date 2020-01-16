@@ -6,7 +6,7 @@ Andrea Matellian and Rebekah Davis
 Group ID: DAVMAT
 */
 
-#include "code.h"
+#include "code.hpp"
 
 using namespace std;
 

@@ -11,7 +11,7 @@ Group ID: DAVMAT
 #include <iostream>
 #include <iomanip>
 
-#include "mastermind.h"
+#include "mastermind.hpp"
 
 using namespace std;
 
