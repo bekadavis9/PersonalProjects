@@ -1,0 +1,107 @@
+Project1
+{
+  name = Rebekah_Davis;
+  date = 7/7/20;
+  discipline = Computer_Engineering;
+}
+
+
+Childhood
+{
+  brother = deaf;
+  language = American_Sign_Language;
+
+  if(brother_has_Cochlear_Implant)    //Cochlear is a company that essentially helps deaf people hear with Cochlear Implants
+  {
+    brother = hearing;
+    language = English;
+  }
+
+  main_interest = Cochlear;          //I wanted to work for Cochlear someday to help people hear
+}
+
+
+
+High_School
+{
+  favorite_class = AP_Computer_Science;   //This class made me realize that I liked coding and wanted to pursue it in college
+
+  discipline_choice1 = Engineering;       //Engineering seemed more conducive to a future at Cochlear
+  discipline_choice2 = Computer_Science;  //Computer science is usually a coding-based discipline
+
+  //I researched a lot of jobs in each field and decided what interested me the most
+  //Engineering aligned more with my interests both inside and outside of academia
+
+  final_discipline_choice = Computer_Engineering; //This major combines engineering with coding
+
+  main_interest = Cochlear;               //I still wanted to work at Cochlear someday
+}
+
+Northeastern_Year1
+{
+  for(GE1000)   //GE1000 is the first class that all engineering majors take their freshman year
+  {
+    research_project = frequency_transmission_in_Cochlear_implants;
+    first_semester = research;
+    second_semester = develop_prototype;
+  }
+
+  //This class was an entire year of completing a research project
+  //We spent the first semester researching a problem and potential solutions
+  //My group researched the insufficiencies in Cochlear implants' ability to translate music
+
+  main_interest = Cochlear;
+}
+
+
+
+Northeastern_Year2
+{
+  favorite_class = embedded_design;   //I programmed a robotic arm to pick up an object and throw it for my final project
+  //This gave me a new interest in robotics and a different side of engineering aside from what I'd researched about Cochlear
+
+  while(co-op = Draper)    //NASA contract
+  {
+    position = software_engineer;
+    work = coding;
+    documentation = Rational_DOORs;   //We had to document our work through this management tool
+
+    //I had to do extensive research on topics which were new to me
+    //This was a job in the aerospace industry, with which I had no previous experience
+  }
+
+  main_interest = Aerospace;
+}
+
+
+Northeastern_Year3
+{
+  while(co-op = Pratt_&_Whitney)  //Private military contract
+  {
+    position = control_and_diagnostics_engineer;
+    work = embedded_design;
+    documentation = whitepapers;    //Technical and precise documentation
+  }
+
+  main_interest = aerospace;
+}
+
+
+Northeastern_Year4
+{
+  for(Capstone)
+  {
+    research_topic = drones;      //My team and I needed to fully understand drone hardware and software
+    project = build_drone;        //We built the drone and programmed it using embedded design
+    documentation = powerpoint;   //Final presentation to all capstone participants
+  }
+
+  for(Research)   //Independent research during second semester
+  {
+    work = classified;
+    research_topic = drones;
+    documentation = powerpoint;
+  }
+
+  main_interest = embedded_design;
+}
